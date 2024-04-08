@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>		
+	<title>Need For Speed</title>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="style/style.css" type="text/css" media="all" />
+    <link rel="icon" type="image/x-icon" href="img/logoB.PNG">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio id="redlight" autoplay loop>
+        <source src="sound/redlight.mp3" type="audio/mp3">
+    </audio>
+    <audio id="engineSound" autoplay loop>
+        <source src="sound/engineSound.mp3" type="audio/mp3">
+    </audio>
+
+	<div class="okvir">
+        <div class="igra">
+            <div class="naslov">
+                <h1>
+                    NEED FO<span id="reload">R</span> SPEED
+                </h1>
+            </div>
+            <div class="okvirLabirint">
+                <div class="labirint">
+                    <canvas id="labirintCanvas" width="564px" height="564px"></canvas>
+                    <canvas id="potCanvas" width="564px" height="564px"></canvas>
+                    <div id="object"></div>
+                </div>
+            </div>
+            <div id="soundCont">
+                <div id=button>
+                    ESCAPE
+                </div>
+                <div id="playSound" onclick="playAudio()">
+                    <img src="img/sound1.PNG" width="40px" height="40px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/testPot.js"></script>
+</body>
+</html>
